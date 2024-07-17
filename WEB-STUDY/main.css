@@ -1,0 +1,23 @@
+.layout{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 80;
+    font-style: normal;
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border:10px dotted #000;
+    border-radius: 20px;            
+}
+#layout_id_02{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    margin : 50px;
+    padding : 50px
+}
+
+
+.layout02 > p{
+    color:#fff
+    
+}
