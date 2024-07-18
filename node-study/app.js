@@ -1,17 +1,20 @@
 const express = require('express');
 const helmet = require('helmet')
 const app = express();
+const ejs = require("ejs");
+
+app.set('view engine','ejs');
+app.set('views','./views');
+app.use('/public',express.static(__dirname + '/public'));
 
 app.use(helmet());
-app.get("/",function(req,res){
-    res.send('Hello World');
-})
+app.use(express.json());
+app.use(express.urlencoded());
 
-app.get("/about",function(req,res){
-    res.send('About page');
-})
+const mainRouter = require('./router/mainRouter')
+app.use('/',mainRouter)
 
 app.listen(3000,function(req,res){
-    console.log("서버가 실행되고 있다!")
+    console.log("서버가 실행되고 있다!")     
 })
 

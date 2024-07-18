@@ -10,6 +10,7 @@
   "author": "doitnowcom",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "helmet": "^7.1.0",
     "supervisor": "^0.12.0"
