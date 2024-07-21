@@ -1,13 +1,13 @@
-module.exports = function(sequelize,DataTypes){
+module.exports = function(sequelize, DataTypes){
     return sequelize.define('users',{
-        idx:{
+        idx: {
             type:DataTypes.INTEGER,
             autoIncrement:true,
             primaryKey:true,
-            allwNull:false            
+            allwNull:false
         },
-        user_id:{
-            type:DataTypes.STRING(250)            
+        user_id: {
+            type:DataTypes.STRING(250)
         }
     })
 }
